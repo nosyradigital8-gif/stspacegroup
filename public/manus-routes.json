@@ -1,0 +1,15 @@
+{
+  "routes": [
+    { "path": "/", "title": "ST-SPACE Facilities Management" },
+    { "path": "/about", "title": "About ST-SPACE" },
+    { "path": "/services", "title": "Facilities Management Services" },
+    { "path": "/services/facility-management", "title": "Facility Management" },
+    { "path": "/services/asset-property-management", "title": "Asset & Property Management" },
+    { "path": "/services/project-support-services", "title": "Project & Support Services" },
+    { "path": "/services/fumigation", "title": "Fumigation Services" },
+    { "path": "/industries", "title": "Industries We Serve" },
+    { "path": "/projects", "title": "Our Work" },
+    { "path": "/contact", "title": "Contact ST-SPACE" },
+    { "path": "/request-a-quote", "title": "Request a Quote" }
+  ]
+}

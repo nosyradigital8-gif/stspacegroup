@@ -1,0 +1,21 @@
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight, CircleCheck } from "lucide-react";
+import { siteConfig } from "@/config/site";
+import { pageMetadata } from "@/lib/metadata";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ContactStrip } from "@/components/ContactStrip";
+
+export const metadata = pageMetadata("About ST-SPACE | Facilities Management in Ghana", "Learn how ST-SPACE approaches facilities management, property care and operational support for spaces in Accra, Kumasi and Ghana.", "/about");
+
+export default function AboutPage() {
+  return (
+    <>
+      <section className="bg-[#050607] py-14 sm:py-20"><div className="container-shell"><Breadcrumbs items={[{ label: "About" }]} /><div className="mt-16 grid gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-end"><div><p className="eyebrow">01 / ABOUT ST-SPACE</p><h1 className="display mt-5 max-w-4xl text-6xl font-semibold leading-[.88] sm:text-8xl">Your space. <span className="text-[#F5BC38]">Our priority.</span></h1></div><p className="max-w-md text-base leading-7 text-white/55">We deliver comprehensive and innovative facilities management solutions that help properties, assets and people stay safe, efficient and productive.</p></div></div></section>
+      <section className="bg-[#f3f0e8] py-16 text-[#050607] sm:py-24"><div className="container-shell grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-20"><div className="image-frame aspect-[4/3]"><Image src="/images/facilities/site-progress.webp" alt="Team members working on a supplied building project image" fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" /></div><div><p className="eyebrow text-[#9b6b0c]">02 / WHY WE EXIST</p><div className="gold-rule mt-4" /><h2 className="display mt-5 text-4xl font-semibold leading-[.98] sm:text-5xl">Operational excellence should feel practical.</h2><p className="mt-6 text-base leading-7 text-black/60">ST-SPACE is built around a simple belief: when spaces are better managed, people can focus on the work, living and service that happen inside them.</p><p className="mt-5 text-base leading-7 text-black/60">We bring that belief to the daily details—through tailored support, attentive coordination and a commitment to the quality of the finished environment.</p><Link href="/services" className="btn-primary mt-8">See our services <ArrowUpRight size={16} /></Link></div></div></section>
+      <section className="bg-[#111315] py-16 sm:py-24"><div className="container-shell grid gap-12 lg:grid-cols-3"><div><p className="eyebrow">03 / MISSION</p><h2 className="display mt-5 text-4xl font-semibold">Make space work better.</h2><p className="mt-5 text-sm leading-7 text-white/55">Deliver considered facilities management support that keeps properties safe, efficient and ready for the people who rely on them.</p></div><div><p className="eyebrow">04 / VISION</p><h2 className="display mt-5 text-4xl font-semibold">Be the partner people can count on.</h2><p className="mt-5 text-sm leading-7 text-white/55">Build trust through reliable delivery, honest communication and a service approach that stays close to the real need.</p></div><div><p className="eyebrow">05 / VALUES</p><div className="mt-5 grid gap-4">{["Responsibility", "Clarity", "Care", "Consistency", "Customer focus"].map((value) => <div key={value} className="flex items-center gap-3 border-b border-white/15 pb-4 text-lg font-bold"><CircleCheck size={18} className="text-[#F5BC38]" />{value}</div>)}</div></div></div></section>
+      <section className="bg-[#050607] py-16 sm:py-24"><div className="container-shell grid gap-12 lg:grid-cols-[.7fr_1.3fr]"><div><p className="eyebrow">06 / SERVICE PHILOSOPHY</p><h2 className="display mt-5 text-4xl font-semibold leading-[.98] sm:text-5xl">One partner. All solutions. Exceptional results.</h2></div><div className="grid gap-0 border-t border-white/15">{siteConfig.differentiators.map((item) => <div key={item.number} className="grid gap-3 border-b border-white/15 py-5 sm:grid-cols-[70px_1fr_1.4fr] sm:items-center"><span className="eyebrow text-white/35">{item.number}</span><h3 className="font-bold">{item.title}</h3><p className="text-sm leading-6 text-white/50">{item.text}</p></div>)}</div></div></section>
+      <ContactStrip />
+    </>
+  );
+}
