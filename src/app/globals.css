@@ -28,6 +28,8 @@ body { margin: 0; background: var(--ink); color: #fff; font-family: var(--font-b
 .btn-primary:hover, .btn-primary:focus-visible { background: var(--gold-bright); transform: translateY(-2px); }
 .btn-secondary { border: 1px solid rgba(255,255,255,0.38); color: #fff; }
 .btn-secondary:hover, .btn-secondary:focus-visible { border-color: var(--gold); color: var(--gold-bright); transform: translateY(-2px); }
+.btn-secondary-light { display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem; min-height: 3rem; padding: 0.78rem 1.15rem; border: 1px solid rgba(5,6,7,0.3); color: var(--ink); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; transition: transform 180ms ease, background-color 180ms ease, color 180ms ease, border-color 180ms ease; }
+.btn-secondary-light:hover, .btn-secondary-light:focus-visible { border-color: var(--gold); background: var(--gold); transform: translateY(-2px); }
 
 a, button, input, select, textarea { outline-color: var(--gold-bright); outline-offset: 3px; }
 :focus-visible { outline: 2px solid var(--gold-bright); }

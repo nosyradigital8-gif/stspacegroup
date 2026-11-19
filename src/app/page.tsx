@@ -12,18 +12,18 @@ export const metadata = pageMetadata("Facilities Management Services in Ghana | 
 export default function HomePage() {
   return (
     <>
-      <section className="noise relative overflow-hidden border-b border-white/10 bg-[#050607]">
+      <section className="noise relative overflow-hidden border-b border-black/10 bg-[#f3f0e8] text-[#050607]">
         <div className="container-shell grid min-h-[680px] items-stretch gap-0 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative z-10 flex flex-col justify-center py-20 pr-0 lg:py-24 lg:pr-14">
             <div className="flex items-center gap-3"><span className="eyebrow">ST-SPACE / GHANA</span><span className="h-px w-10 bg-[#D99B20]" /></div>
-            <h1 className="display mt-7 max-w-xl text-balance text-6xl font-semibold leading-[0.89] text-white sm:text-7xl lg:text-[5.8rem]">Smarter facilities. <span className="text-[#F5BC38]">Better managed spaces.</span></h1>
-            <p className="mt-7 max-w-lg text-base leading-7 text-white/60">Professional facilities management solutions that protect your assets, improve operational efficiency and create safer, better-performing environments.</p>
-            <div className="mt-9 flex flex-wrap gap-3"><Link href="/request-a-quote" className="btn-primary">Request a consultation <ArrowUpRight size={16} /></Link><Link href="/services" className="btn-secondary">Explore services <ArrowDownRight size={16} /></Link></div>
-            <div className="mt-14 grid max-w-lg grid-cols-3 gap-4 border-t border-white/15 pt-5 text-[0.66rem] uppercase tracking-[0.13em] text-white/45"><span><strong className="block text-xl font-semibold text-white">01</strong>Partner mindset</span><span><strong className="block text-xl font-semibold text-white">02</strong>Operational care</span><span><strong className="block text-xl font-semibold text-white">03</strong>Clear next steps</span></div>
+            <h1 className="display mt-7 max-w-xl text-balance text-6xl font-semibold leading-[0.89] text-[#050607] sm:text-7xl lg:text-[5.8rem]">Smarter facilities. <span className="text-[#9b6b0c]">Better managed spaces.</span></h1>
+            <p className="mt-7 max-w-lg text-base leading-7 text-black/60">Professional facilities management solutions that protect your assets, improve operational efficiency and create safer, better-performing environments.</p>
+            <div className="mt-9 flex flex-wrap gap-3"><Link href="/request-a-quote" className="btn-primary">Request a consultation <ArrowUpRight size={16} /></Link><Link href="/services" className="btn-secondary-light">Explore services <ArrowDownRight size={16} /></Link></div>
+            <div className="mt-14 grid max-w-lg grid-cols-3 gap-4 border-t border-black/15 pt-5 text-[0.66rem] uppercase tracking-[0.13em] text-black/45"><span><strong className="block text-xl font-semibold text-[#050607]">01</strong>Partner mindset</span><span><strong className="block text-xl font-semibold text-[#050607]">02</strong>Operational care</span><span><strong className="block text-xl font-semibold text-[#050607]">03</strong>Clear next steps</span></div>
           </div>
           <div className="image-frame relative min-h-[460px] lg:min-h-0">
             <Image src="/images/hero/operations-night.webp" alt="Floodlit sports facility supplied as ST-SPACE operational imagery" fill priority sizes="(min-width: 1024px) 55vw, 100vw" className="object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#050607]/65 via-transparent to-transparent lg:from-[#050607]/70" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#f3f0e8]/90 via-[#f3f0e8]/20 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-4 border-t border-white/40 pt-3 text-[0.62rem] font-bold uppercase tracking-[0.17em] text-white/70"><span>Spaces in motion</span><span className="text-[#F5BC38]">Your space. Our priority.</span></div>
           </div>
         </div>
