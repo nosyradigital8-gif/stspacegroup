@@ -14,7 +14,7 @@ export type Service = {
 export const siteConfig = {
   name: "ST-SPACE",
   descriptor: "FACILITIES MANAGEMENT SERVICES",
-  publicOrigin: "https://stspacegroup-nosyradigital8-9804s-projects.vercel.app",
+  publicOrigin: "https://stspacegroup.vercel.app",
   tagline: "We manage spaces. You focus on success.",
   positioning:
     "At ST-SPACE, we deliver comprehensive and innovative facilities management solutions that ensure your property, assets, and people are safe, efficient, and productive.",
